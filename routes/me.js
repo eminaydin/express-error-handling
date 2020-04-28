@@ -1,7 +1,6 @@
 const express = require("express");
 let router = express.Router();
-
-
+const myHobbies = ["piano", "football", "basketball"];
 router
     .route("/about")
     .get((req, res) => {
@@ -10,13 +9,19 @@ router
 router
     .route("/hobbies")
     .get((req, res) => {
-        res.send("hi hobbies")
+        res.send(myHobbies)
     })
 
 router
     .route("/hobbies/:hobbieName")
     .get((req, res) => {
-        res.send("hi id" + req.params.hobbieName)
+        const found = myHobbies.filter(hobby => hobby === req.params.hobbieName);
+
+        if (found) {
+            return res.send("true")
+        } else {
+            return res.send("false")
+        }
     })
 
 
