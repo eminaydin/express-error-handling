@@ -15,12 +15,11 @@ router
 router
     .route("/hobbies/:hobbieName")
     .get((req, res) => {
-        console.log(JSON.stringify(req.query));
         const found = myHobbies.filter(hobby => hobby === req.params.hobbieName);
-        if (found) {
-            res.send("true")
+        if (found.length === 0) {
+            res.send(false)
         } else {
-            res.send("false")
+            res.send(true)
         }
 
 
