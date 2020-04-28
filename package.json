@@ -1,0 +1,23 @@
+{
+  "name": "express-03-error-handling-eminaydin",
+  "version": "1.0.0",
+  "description": "Create an express service if you use the express generator, remove the code we don't need.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-ber-fbw21/express-03-error-handling-eminaydin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dci-ber-fbw21/express-03-error-handling-eminaydin/issues"
+  },
+  "homepage": "https://github.com/dci-ber-fbw21/express-03-error-handling-eminaydin#readme"
+}
