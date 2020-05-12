@@ -4,7 +4,8 @@
   "description": "Create an express service if you use the express generator, remove the code we don't need.",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {

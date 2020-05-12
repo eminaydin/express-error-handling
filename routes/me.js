@@ -9,20 +9,21 @@ router
 router
     .route("/hobbies")
     .get((req, res) => {
+
+
         res.send(myHobbies)
+
     })
 
 router
-    .route("/hobbies/:hobbieName")
+    .route("/hobbies/:hobbyName")
     .get((req, res) => {
-        const found = myHobbies.filter(hobby => hobby === req.params.hobbieName);
+        const found = myHobbies.filter(hobby => hobby === req.params.hobbyName)
         if (found.length === 0) {
             res.send(false)
         } else {
             res.send(true)
         }
-
-
     })
 
 
