@@ -21,10 +21,3 @@ Create an express service if you use the express generator, remove the code we d
   }
 }
 ```
-
-## Extra
-
-Refactor `/me/hobbies/<hobbyName>` from route parameter to query parameter.
-
-- query multiple hobbies
-- response includes data (hobbies) and error not included hobbies
